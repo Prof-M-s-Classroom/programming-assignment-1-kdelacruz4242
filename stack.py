@@ -43,7 +43,18 @@ class CircularStack:
             print("Stack is empty")
             return None
 
-    # unfinished def
+        temp = self.tail.data #check for oldest node
+
+        if self.size == 1:
+            self.head = None
+            self.tail = None
+        else:
+            self.tail = self.tail.next
+            self.head.next = self.tail
+
+        self.size -= 1
+
+        return temp
 
 
     def peek(self):

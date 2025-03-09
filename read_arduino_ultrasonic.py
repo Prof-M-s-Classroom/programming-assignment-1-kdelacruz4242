@@ -1,6 +1,12 @@
 import serial
 import time
 
+#GND -> GND
+#Echo -> Digital Pin 6
+#Trig -> Digital Pin 7
+#VCC -> 5V
+
+
 # Replace 'COM3' with the correct port for your system
 arduino_port = 'COM7'
 baud_rate = 9600
