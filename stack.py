@@ -68,7 +68,13 @@ class CircularStack:
             print("Stack is empty")
             return
 
-    # unfinished def
+        value = self.tail
+        count = 0
+
+        while count < self.size:
+            print(value.data)   #print from oldest to newest
+            value = value.next
+            count += 1
 
     def is_empty(self):
         return self.size == 0
